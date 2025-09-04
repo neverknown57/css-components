@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap");
+
+header {
+  font-family: "TASA Explorer", sans-serif;
+  font-optical-sizing: auto;
+  height: 100dvh;
+  padding: 20px 60px;
+  position: relative;
+  font-size: 20px;
+  color: aliceblue;
+  /* transform: perspective("mirror"); */
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to bottom, yellow, rgba(0, 0, 0, 0.486) 9%),
+    url(https://wallpapercave.com/wp/wp2740157.jpg);
+  background-size: cover;
+  transform: scaleX(-1);
+}
+.header-container {
+  /* background-color: rgb(72, 216, 79); */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.header-container--inner {
+  width: 50%;
+
+  /* background: goldenrod; */
+}
+h1 {
+  font-weight: 600;
+  /* width: 35%; */
+  font-style: normal;
+  letter-spacing: -1px;
+  /* margin: 2rem 0 1rem 0; */
+  line-height: 1.05;
+}
+
+nav {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+header p {
+  line-height: 1.6;
+  margin-bottom: 34px;
+}
+
+header a {
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-size: large;
+  background-color: rgba(247, 118, 67, 0.548);
+  border-radius: 10px;
+  outline: none;
+}
+
+header > * {
+  margin: 0 px auto;
+  width: 1200px;
+}
